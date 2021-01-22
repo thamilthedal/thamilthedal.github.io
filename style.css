@@ -4,7 +4,8 @@
 }
 
 #article-title {
-      text-alignt:left;
+      text-align:left;
+      font-size:0.8em;
 }
 
 #article-content {
@@ -13,4 +14,5 @@
 
 p {
       text-align:justify;
+      color:red;
 }
