@@ -1,4 +1,12 @@
 #article-main {
       margin-left:20%;
       margin-right:20%;
-      }
+}
+
+#article-title {
+      text-alignt:left;
+}
+
+#article-content {
+      text-align:justify;
+}
