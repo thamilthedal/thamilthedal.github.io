@@ -1,6 +1,7 @@
 #article-main {
       margin-left: 20%;
       margin-right: 20%;
+      float: center;
 }
 
 #article-title {
@@ -16,8 +17,65 @@
 p {
       text-align: justify;
       line-height: 1.5;
+      padding:5px;
 }
 
 #article-details {
       text-align: right;
+}
+
+#header {
+	text-align: center;
+	align-content: center;
+}
+
+#tab {
+	width: 320px;
+  	padding: 35px;
+  	margin: 0;
+  	font-family: monospace;
+  	font-size: 1.5em;
+  	color: black;
+}
+
+a{
+	text-decoration: none;
+	text-decoration-color: none;
+}
+
+#article-title-tamil {
+      text-align: left;
+      font-size: 2.5em;
+      font-weight: bold;
+      font-family: Vijaya;
+
+}
+
+#article-content-tamil {
+      font-size: 1.25em;
+      font-family: Vijaya;
+}
+
+#quote {
+	text-align: center;
+	font-size: 1.25em;
+	line-height: 2;
+}
+
+#DP {
+	border: 1px solid #000;
+  	border-radius: 4px;
+  	padding: 10px;
+  	margin-left: 20px;
+  	align-items: right;
+  	float: right;
+  	height:50%;
+}
+
+#sideleft {
+  float: left;
+}
+
+#sideright {
+  float: right;
 }
