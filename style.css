@@ -9,10 +9,9 @@
 }
 
 #article-content {
-      
+      font-size: 10%;
 }
 
 p {
       text-align:justify;
-      color:red;
 }
