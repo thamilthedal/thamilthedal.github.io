@@ -2,19 +2,21 @@ body{
 	margin-left: 4em;
 	margin-right: 4em;
 	margin-top: 8em;
-	background: peachpuff;
-	color: saddlebrown;
+	color: midnightblue;
+	font-size: 1.1em;
+	background-image: url('img/unsplash-bg-1.jpg');
 }
 
 h1{
 	text-align: center;
 	font-size: 3em;
-	color: coral;
+	color: crimson;
 }
 
 h2{
 	text-align: center;
 	color: teal;
+	font-size: 2em;
 }
 
 ul, ol{
@@ -34,13 +36,13 @@ li{
 	background: lavenderblush;
 	text-align: justify;
 	padding: 1.5em;
-	border-radius: 1em;
+	border-radius: 0.8em;
 	margin: 1em;
 }
 
 .Education, .Experience, .Skills, .Projects, .Publications{
 	background: lavenderblush;
-	border-radius: 1em;
+	border-radius: 0.8em;
 	padding: 1em;
 	margin: 1em;
 	padding-right: 2em;
