@@ -31,7 +31,7 @@ li{
 	text-align: justify;
 }
 
-.Default{
+#Default{
 	line-height: 2em;
 	background: lavenderblush;
 	text-align: justify;
@@ -40,7 +40,7 @@ li{
 	margin: 1em;
 }
 
-.Education, .Experience, .Skills, .Projects, .Publications{
+#Education, #Experience, #Skills, #Projects, #Publications{
 	background: lavenderblush;
 	border-radius: 0.8em;
 	padding: 1em;
@@ -48,3 +48,13 @@ li{
 	padding-right: 2em;
 }
 
+/*.navbar li{
+	display: inline;
+	text-align: center;
+	margin: 1em;
+	color: crimson;
+	background: lavenderblush;
+	padding: 0.5em;
+	border-radius: 0.5em;
+}
+*/
