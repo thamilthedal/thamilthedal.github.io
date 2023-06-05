@@ -1,7 +1,7 @@
 body{
-	margin-left: 4em;
-	margin-right: 4em;
-	margin-top: 8em;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-top: 20%;
 	color: midnightblue;
 	font-size: 1.1em;
 	background-image: url('img/unsplash-bg-1.jpg');
@@ -35,17 +35,17 @@ li{
 	line-height: 2em;
 	background: lavenderblush;
 	text-align: justify;
-	padding: 1.5em;
+	padding: 2.5%;
 	border-radius: 0.8em;
-	margin: 1em;
+	margin: 2%;
 }
 
 #Education, #Experience, #Skills, #Projects, #Publications{
 	background: lavenderblush;
 	border-radius: 0.8em;
-	padding: 1em;
-	margin: 1em;
-	padding-right: 2em;
+	padding: 2%;
+	margin: 2%;
+	padding-right: 3%;
 }
 
 /*.navbar li{
