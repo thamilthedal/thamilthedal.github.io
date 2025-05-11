@@ -1,76 +1,701 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="style.css" />
-		<title>Thamilmani - Portfolio	</title>
-	</head>
-	<body>
-		<h1>Thamilmani</h1>
+<html lang="en">
 
-		<!-- <div id = "nav", class="navbar">
-			<ul>
-				<li><a href="#Education">Education</a></li>
-				<li><a href="#Experience">Experience</a></li>
-				<li><a href="#Skills">Skills</a></li>
-				<li><a href="#Projects">Projects</a></li>
-				<li><a href="#Publications">Publications</a></li>
-			</ul>
-		</div> -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<div id="Default">
-			Hi! I am passionate about turbulence and heat transfer applications. I constantly dabble with problems that are challenging and exciting to solve. Currently I am working on modelling flow behavior and heat transfer at supercritical pressures.
-		</div>
+    <!--=============== FAVICON ===============-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicons/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="assets/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="assets/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#a789d4">
 
-		<div id="Education">
-			<h2>Education</h2>
-			<ul>
-				<li>PhD. Mechanical Engineering (Jan 2019 - Present)</li>
-				<li>M.Tech. Thermal and Fluids Engineering (2016-2018)</li>
-				<li>B.E. Mechanical Engineering (2011-2015)</li>
-			</ul>
-		</div>
+    <!--=============== BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
-		<div id="Experience">
-			<h2>Experience</h2>
-			<ul>
-				<li>Research Consultant, Tabrej Design Life Pvt. Ltd., (Dec 2022 - Feb 2023)</li>
-				<li>Project Officer, Centre Of Propulsion Technology, Indian Institute of Technology Madras (July 17th, 2018 - December 31st, 2018)</li>
-			</ul>
-		</div>
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
-		<div id="Skills">
-			<h2>Skills</h2>
-			<ul>
-				<li>Computation Fluid Dynamics (ANSYS Fluent, CFX)</li>
-				<li>Turbulence Modelling</li>
-				<li>Thermodynamics and Heat Transfer</li>
-				<li>Programming Languages: Python, C++, MATLAB</li>
-				<li>Latex</li>
-			</ul>
-		</div>
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
 
-		<div id="Projects">
-			<h2>Projects</h2>
-			<ul>
-				<li>Analysis of flow transitions and heat transfer characteristics for supercritical water based open loop</li>
-				<li>Numerical Studies on gas turbine blades for study on tip clearance</li>
-				<li>Numerical analysis of flow over multiple inline-square cylinders</li>
-				<li>Numerical studies on inward solidification of spherical phase change material dispersed with macroparticles</li>
-				<li>foamToFluent2D</li>
-				<li>supercritical CLI</li>
-				<li>residual_hpc CLI</li>
-			</ul>
-		</div>
+    <title> Thamil's Portfolio </title>
+</head>
 
-		<div id="Publications">
-			<h2>Publications</h2>
-			<ol>
-                <li>Thamilmani Murugan, Arun K. Raj, Amit Agrawal, Sandip K. Saha, "Study on Convective Heat Transfer of Supercritical Water in Annular Square Channel", <i>Heat Transfer Engineering</i>, Jan 2023. <a href="https://doi.org/10.1080/01457632.2022.2162012" target="_blank" rel="noopener noreferrer">DOI:10.1080/01457632.2022.2162012</a></li>
-				<li>Thamilmani M, Amit Agrawal, Ajit Kumar R, Ajith Kumar S, "Numerical studies on flow over multiple cylinders in tandem arrangement: Effect of number of cylinders", <i>FMFP International Conference</i>, IIT Bombay, Mumbai, Dec 2020</li>
-                <li>N. Lakshmi Narasimhan, V. Veeraraghavan, G. Ramanathan, B. Sanjay Bharadwaj, M. Thamilmani, "Studies on the inward spherical solidification of a phase change material dispersed with macro particles",<i>The Journal of Energy Storage</i>, vol. 15, pp. 158-171, Feb, 2018. <a href="https://doi.org/10.1016/j.est.2017.10.016" target="_blank" rel="noopener noreferrer">DOI:10.1016/j.est.2017.10.016</a> </li>
-			</ol>
-		</div>
-	</body>
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Thamil</a>
+
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item ">
+                        <a href="#home" class="nav__link">
+                            <i class='bx bx-home'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item ">
+                        <a href="#about" class="nav__link">
+                            <i class='bx bx-user'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class='bx bx-book'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#work" class="nav__link">
+                            <i class='bx bx-briefcase-alt-2'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class='bx bx-message-square-dots'></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!--=============== theme change button ===============-->
+            <i class='bx bx-moon change-theme change-theme-button' id="theme-button"></i>
+
+        </nav>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+        <!--=============== HOME ===============-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <span class="home__greeting">Hello, I'm</span>
+                    <h1 class="home__name">Thamilmani</h1>
+                    <h3 class="home__education">CFD Researcher</h3>
+
+                    <div class="home__button">
+                        <a download="" href="assets/pdf/thamil-cv.pdf" class="button button--ghost">
+                            Download CV
+                        </a>
+
+                        <a href="#about" class="button">About</a>
+                    </div>
+                </div>
+
+                <div class="home__handle">
+                    <img src="assets/img/perfil2.png" alt="" class="home__img">
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/thamilthedal/" target="_blank" class="home__social-link">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+                    <a href="https://github.com/thamilthedal" target="_blank" class="home__social-link">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="https://medium.com/@thamilthedal" target="_blank" class="home__social-link">
+                        <i class='bx bxl-medium'></i>
+                    </a>
+                </div>
+
+                <a href="#about" class="home__scroll">
+                    <i class='bx bx-mouse home__scroll-icon'></i>
+                    <span class="home__scroll-name">Scroll Down</span>
+                </a>
+            </div>
+        </section>
+
+        <!--=============== ABOUT ===============-->
+        <section class="about section" id="about">
+            <span class="section__subtitle">My Intro</span>
+            <h2 class="section__title">About Me</h2>
+
+            <div class="about__container container grid">
+                <img src="assets/img/about.jpg" alt="" class="about__img">
+
+                <div class="about__data">
+                    <div class="about__info">
+                        <div class="about__box">
+                            <i class='bx bx-award about__icon'></i>
+                            <h3 class="about__title">Experience</h3>
+                            <span class="about__subtitle">6 Years</span>
+                        </div>
+                        <div class="about__box">
+                            <i class='bx bx-briefcase-alt about__icon'></i>
+                            <h3 class="about__title">Research Scholar</h3>
+                            <span class="about__subtitle">IIT Bombay</span>
+                        </div>
+                        <div class="about__box">
+                            <i class='bx bx-support about__icon'></i>
+                            <h3 class="about__title">Support</h3>
+                            <span class="about__subtitle">Online 24/7</span>
+                        </div>
+                    </div>
+
+                    <p class="about__description">
+                        CFD Researcher. I am passionate about turbulence and heat transfer applications. 
+                        I constantly dabble with problems that are challenging and exciting to solve. 
+                        Currently pursuing PhD at IIT-Bombay on modelling flow behavior and heat transfer at supercritical pressures.
+                    </p>
+
+                    <a href="#contact" class="button about__button-contact">Contact Me</a>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== SKILLS ===============-->
+        <section class="skills section" id="skills">
+            <!-- <span class="section__subtitle">My Abilities</span> -->
+            <h2 class="section__title">Skills</h2>
+
+            <div class="skills__container container grid">
+                <div class="skills__content">
+                    <h3 class="skills__title">Computational Fluid Dynamics</h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">ANSYS Fluent</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Python</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">ANSYS CFX</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">High Performance Computing</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">C</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">OpenFOAM</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills__content">
+                    <h3 class="skills__title">Workflow Automation</h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">PyFluent</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">ROCKS Cluster management</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">BASH scripting</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Wokrflow Integration</h3>
+                                    <span class="skills__level">Intermediate</span>
+                                </div>
+                            </div>
+
+                            <!-- <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Firebase</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Mongo DB</h3>
+                                    <span class="skills__level">Advanced</span>
+                                </div>
+                            </div> -->
+
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!--=============== SERVICES ===============-->
+        <section class="services section">
+            <span class="section__subtitle">I build</span>
+            <h2 class="section__title">CLI Tools</h2>
+
+            <div class="services__container container grid">
+                <div class="services__card">
+                    <div class="serv">
+                        <h3 class="services__title">foamToFluent2D <br> CLI</h3>
+
+                        <span class="services__button">
+                            See More <i class='bx bx-right-arrow services__icon'></i>
+                        </span>
+                    </div>
+
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+
+                            <h3 class="services__modal-title">foamToFluent2D CLI</h3>
+
+                            <p class="services__modal-description">
+                                I built a CLI tool that converts 2.5D meshes generated via OpenFOAM blockmesh into 2D meshes
+                                for ANSYS Fluent Simulations.
+                            </p>
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Written in Python and Works on structured meshes so far.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Direct Conversion from Polymesh to 2D Fluent Mesh.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Conversion faster than OpenFOAM in-built foamToFluentMesh utility.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services__card">
+                    <h3 class="services__title">residual_hpc <br> CLI</h3>
+
+                    <span class="services__button">
+                        See More <i class='bx bx-right-arrow services__icon'></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+
+                            <h3 class="services__modal-title">residual_hpc CLI</h3>
+
+                            <p class="services__modal-description">
+                                I built a CLI tool that can monitor Residuals and Report files for
+                                ANSYS Fluent simulations running through a HPC Cluster.
+                            </p>
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Python Utility auto updates residual monitor of running simulations at a regular frequency.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Can be installed and started with just SSH Credentials to be entered only once at the beginning and encrypted securely.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Report Files can be monitor separately for the running simulations in addition to the residue.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services__card">
+                    <h3 class="services__title">supercritical <br> CLI</h3>
+
+                    <span class="services__button">
+                        See More <i class='bx bx-right-arrow services__icon'></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+
+                            <h3 class="services__modal-title">supercritical CLI</h3>
+
+                            <p class="services__modal-description">
+                                A CLI handling full-fledged simulation workflow right from
+                                modelling and meshing, case creation, job handling in Cluster, 
+                                monitoring, postprocessing and report generation.
+                            </p>
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Full-fledged Python module that can be extended to any usecase for running simulations in ANSYS Fluent with and without UDFs also.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Modelling and Meshing are automated through blockmesh in OpenFOAM and separate mesh-dependency utility is also present.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        ANSYS Fluent v21R2 and OpenFOAM are essential to run the package.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        In-built terminal based residual monitor, Separate Post-processing utility and Variable property generation module.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Separate commands for Job handling, submitting, deleting, clearing up files in Cluster.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== WORK ===============-->
+        <section class="work section" id="work">
+            <!-- <span class="section__subtitle">Publications</span> -->
+            
+            <h2 class="section__title">Publications</h2>
+
+            <div class="contact__container">
+                <div class="contact__content">
+                    <div class="contact__info">
+                        <div class="contact__card">
+                            <h3 class="contact__card-title">"Study on Convective Heat Transfer of Supercritical Water in Annular Square Channel"</h3>
+                            <span class="contact__card-data ">Thamilmani Murugan, Arun K. Raj, Amit Agrawal, Sandip K. Saha</span>
+                            <p class="contact__card-data ">Heat Transfer Engineering, Jan 2023</p>
+                            <a href="https://doi.org/10.1080/01457632.2022.2162012" target="_blank" class="contact__button">
+                                Check here <i class='bx bx-right-arrow contact__button-icon'></i>
+                            </a>
+                        </div>
+
+                        <div class="contact__card">
+                            <h3 class="contact__card-title">"Numerical studies on flow over multiple cylinders in tandem arrangement: Effect of number of cylinders"</h3>
+                            <span class="contact__card-data ">Thamilmani M, Amit Agrawal, Ajit Kumar R, Ajith Kumar S</span>
+                            <p class="contact__card-data ">FMFP International Conference, IIT Bombay, Mumbai, December 2020</p>
+                        </div>
+
+                        <div class="contact__card">
+                            <h3 class="contact__card-title">"Studies on the inward spherical solidification of a phase change material dispersed with macro particles"</h3>
+                            <span class="contact__card-data ">N. Lakshmi Narasimhan, V. Veeraraghavan, G. Ramanathan, B. Sanjay Bharadwaj, M. Thamilmani</span>
+                            <p class="contact__card-data ">The Journal of Energy Storage</i>, vol. 15, pp. 158-171, Feb, 2018.</p>
+                            <a href="https://doi.org/10.1016/j.est.2017.10.016" target="_blank" class="contact__button">
+                                Check here <i class='bx bx-right-arrow contact__button-icon'></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+            <!-- <div class="work__filters">
+                <span class="work__item active-work" data-filter='all'>All</span>
+                <span class=" work__item" data-filter='.cli'>CLI Tool</span>
+                <span class=" work__item" data-filter='.mesh'>Meshing</span>
+                <span class=" work__item" data-filter='.simulation'>Simulation</span>
+            </div> -->
+
+            <div class="work__container container grid">
+                <!-- <div class="work__card mix cli">
+                    <img src="assets/img/work1.jpg" alt="" class="work__img">
+
+                    <h3 class="work__title">residual_hpc</h3>
+
+                    <a href="#" class="work__button">
+                        Demo <i class='bx bx-right-arrow work__icon'></i>
+                    </a>
+                </div> -->
+
+                <!-- <div class="work__card mix cli">
+                    <img src="assets/img/work2.jpg" alt="" class="work__img">
+
+                    <h3 class="work__title">supercritical</h3>
+
+                    <a href="#" class="work__button">
+                        Demo <i class='bx bx-right-arrow work__icon'></i>
+                    </a>
+                </div> -->
+
+                <!-- <div class="work__card cli mesh">
+                    <img src="assets/img/work3.jpg" alt="" class="work__img">
+
+                    <h3 class="work__title">foamToFluent2D</h3>
+
+                    <a href="#" class="work__button">
+                        Demo <i class='bx bx-right-arrow work__icon'></i>
+                    </a>
+                </div> -->
+
+                <!-- <div class="work__card mix simulation">
+                    <img src="assets/img/work4.jpg" alt="" class="work__img">
+
+                    <h3 class="work__title">Aerodynamics of bluff bodies</h3>
+
+                    <a href="#" class="work__button">
+                        Demo <i class='bx bx-right-arrow work__icon'></i>
+                    </a>
+                </div> -->
+
+                <!-- <div class="work__card mix simulation">
+                    <img src="assets/img/work5.jpg" alt="" class="work__img">
+
+                    <h3 class="work__title">Heated pipe flow</h3>
+
+                    <a href="#" class="work__button">
+                        Demo <i class='bx bx-right-arrow work__icon'></i>
+                    </a>
+                </div> -->
+
+            </div>
+        </section>
+
+        <!--=============== TESTIMONIALS ===============-->
+        <section class="testimonial section">
+            <span class="section__subtitle">My previous</span>
+            <h2 class="section__title">Experience</h2>
+
+            <div class="testimonial__container container swiper">
+                <div class="swiper-wrapper">
+                    <div class="testimonial__card swiper-slide">
+                        <img src="assets/img/testimonial1.jpg" alt="" class="testimonial__img">
+
+                        <h3 class="testimonial__name">Project Officer</h3>
+                        <p class="testimonial__description">
+                            Conducted simulations on gas-turbine blade cooling and 
+                            characterization of wing-tip vortices at COPT, IIT Madras under Prof. BVSSS Prasad (July - Dec 2018)
+                        </p>
+                    </div>
+
+                    <div class="testimonial__card swiper-slide">
+                        <img src="assets/img/testimonial2.jpg" alt="" class="testimonial__img">
+
+                        <h3 class="testimonial__name">Research Consultant</h3>
+                        <p class="testimonial__description">
+                            Conducted thermodynamic system analysis and feasibility study
+                            at Tabrej Design Life Pvt. Ltd., Thane (Dec 2022 - Feb 2023)
+                        </p>
+                    </div>
+
+                    <div class="testimonial__card swiper-slide">
+                        <img src="assets/img/testimonial3.png" alt="" class="testimonial__img">
+
+                        <h3 class="testimonial__name">Freelance Consultant</h3>
+                        <p class="testimonial__description">
+                            Freelancing on multiple other CFD Projects for research and individual projects 
+                            through cfd-online forum since Jan 2025 under Thedal Flow Code.
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </section>
+
+        <!--=============== CONTACT ===============-->
+        <section class="contact section" id="contact">
+            <sapn class="section__subtitle">Get in touch</sapn>
+            <h3 class="section__title">Contact Me</h3>
+
+            <div class="contact__container">
+                <div class="contact__content">
+                    <div class="contact__info">
+                        <div class="contact__card">
+                            <i class='bx bx-mail-send contact__card-icon'></i>
+                            <h3 class="contact__card-title">Email</h3>
+                            <span class="contact__card-data">thamilthedal@gmail.com</span>
+
+                            <a href="mailto:thamilthedal@gmail.com" target="_blank" class="contact__button">
+                                Write Me <i class='bx bx-right-arrow contact__button-icon'></i>
+                            </a>
+                        </div>
+
+                        <div class="contact__card">
+                            <i class='bx bxl-whatsapp contact__card-icon'></i>
+                            <h3 class="contact__card-title">Whatsapp</h3>
+                            <span class="contact__card-data">+91-9952-67-4098</span>
+
+                            <a href="https://api.whatsapp.com/send?phone=+919952674098&text=Hey there!" target="_blank"
+                                class="contact__button">
+                                Write Me <i class='bx bx-right-arrow contact__button-icon'></i>
+                            </a>
+                        </div>
+
+                        <div class="contact__card">
+                            <i class='bx bxl-twitter contact__card-icon'></i>
+                            <h3 class="contact__card-title">Twitter</h3>
+                            <span class="contact__card-data">thamilthedal</span>
+
+                            <a href="https://twitter.com/thamilthedal" target="_blank" class="contact__button">
+                                Write Me <i class='bx bx-right-arrow contact__button-icon'></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer"> 
+        <div class="footer__container container">
+            <h1 class="footer__title">Thamil</h1>
+
+            <ul class="footer__list">
+
+                <li class="footer__item">
+                    <a href="#" class="footer__link">Home</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#about" class="footer__link">About</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#skills" class="footer__link">Skills</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#work" class="footer__link">Work</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#contact" class="footer__link">Contact</a>
+                </li>
+            </ul>
+
+            <ul class="footer__social">
+                <!-- <li class="footer__social-item">
+                    <a href="#" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-facebook footer__social-icon'></i>
+                    </a>
+                </li> -->
+                <li class="footer__social-item">
+                    <a href="https://github.com/thamilthedal" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-github footer__social-icon'></i>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="https://www.linkedin.com/in/thamilthedal/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-linkedin footer__social-icon'></i>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="https://instagram.com/thamilthedal" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-instagram footer__social-icon'></i>
+                    </a>
+                </li>
+            </ul>
+
+            <span class="footer__copy">
+                &#169; 2025 Thedal Flow Code. All rights reserved. (Inspired by S44WN)
+            </span>
+        </div>
+    </footer>
+
+    <!--=============== SCROLLREVEAL ===============-->
+
+    <!-- <script src="assets/js/scrollreveal.min.js"></script> -->
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MIXITUP FILTER ===============-->
+    <script src="assets/js/mixitup.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+
 </html>
