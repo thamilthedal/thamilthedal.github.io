@@ -175,7 +175,7 @@ body.light-theme {
 .light-theme .services__card,
 .light-theme .work__card,
 .light-theme .testimonial__card,
-.light-theme .contact__card,
+.light-theme .contact__card ,
 .light-theme .contact__form-div {
   box-shadow: 0 2px 16px hsla(var(--second-hue), 48%, 8%, 0.1);
 }
@@ -750,6 +750,7 @@ body.light-theme {
   margin-bottom: 1.5rem;
 }
 
+
 .contact__info {
   display: grid;
   gap: 1rem;
@@ -778,6 +779,39 @@ body.light-theme {
 }
 
 .contact__card-data {
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.publication__container {
+  row-gap: 3rem;
+  padding-bottom: 3rem;
+}
+
+.publication__info {
+  display: grid;
+  gap: 1rem;
+}
+
+.publication__card {
+  background-color: var(--container-color);
+  padding: 2rem 1rem;
+  border-radius: 0.75rem;
+  width: 60%;
+  text-align: center;
+  justify-self: center;
+}
+
+.publcation__card-title,
+.publication__card-data {
+  font-size: var(--small-font-size);
+}
+
+.publication__card-title {
+  font-weight: var(--font-medium);
+}
+
+.publication__card-data {
   display: block;
   margin-bottom: 0.75rem;
 }
