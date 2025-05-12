@@ -797,9 +797,9 @@ body.light-theme {
   background-color: var(--container-color);
   padding: 2rem 1rem;
   border-radius: 0.75rem;
-  width: 60%;
+  /* width: 60%; */
   text-align: center;
-  justify-self: center;
+  /* justify-self: center; */
 }
 
 .publcation__card-title,
