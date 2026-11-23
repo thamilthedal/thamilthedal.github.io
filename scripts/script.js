@@ -84,7 +84,7 @@
         return '<li>' + (t.icon ? ico(t.icon) : '') + '<div><b>' + esc(t.value) + '</b><span>' + esc(t.label) + '</span></div></li>';
       }).join("") +
     '</ul><p>' + esc(A.text) + '</p><a class="cta" href="#contact-me">' + ico('contact-me') + 'Contact me</a>' +
-    '  <a class="cta" href="CV_Thamilmani_2026.pdf" target="blank">' + ico('download') + 'Download CV</a></div></div></section>'
+    '  <a class="cta" href="src/CV_Thamilmani_2026.pdf" target="blank">' + ico('download') + 'Download CV</a></div></div></section>'
     : "";
 
   document.getElementById("name").textContent = SITE.name;
