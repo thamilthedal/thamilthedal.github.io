@@ -67,4 +67,4 @@ const SITE = {
   ]
 };
 
-const PHOTO = "photo.jpg";
+const PHOTO = "src/photo.jpg";
