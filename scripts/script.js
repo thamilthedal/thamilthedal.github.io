@@ -164,7 +164,7 @@
     if (ev.target === dlg || ev.target.closest(".pclose")) dlg.close();
   });
 
-  document.getElementById("contact").innerHTML = "© " + new Date().getFullYear() + " " + esc(SITE.name);
+  document.getElementById("contact").innerHTML = "© " + new Date().getFullYear() + "Theadl Flow Code";
 })();
 
 /* Light / dark toggle: remembers the choice, otherwise follows the device setting */
